@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Granite Travel Trade Expos – homepage concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--slate:#1F2329;--slate2:#2A2F37;--stone:#E8EBEE;--paper:#F7F8F9;--ink:#15181C;--mist:#69717C;--sea:#0E7C86;--sun:#F4C04E;--line:#D5DAE0;
+--h:'Bricolage Grotesque',system-ui,sans-serif;--b:'Instrument Sans',system-ui,sans-serif;--m:'JetBrains Mono',ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--sea);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1220px;margin:0 auto;padding:0 24px}
+.note{background:var(--sun);color:#2b2100;font-size:13px;text-align:center;padding:7px 12px;font-weight:600}
+header{background:var(--slate);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:18px;padding-bottom:18px}
+.logo{font-family:var(--h);font-weight:800;font-size:21px;letter-spacing:.01em;text-decoration:none;line-height:1}
+.logo small{display:block;font-family:var(--b);font-weight:500;font-size:12px;color:#AEB6C0;margin-top:5px;letter-spacing:0}
+nav{display:none;gap:26px;font-size:15px;font-weight:500}nav a{text-decoration:none;color:#D6DBE1}
+.lang{display:flex;border:1px solid #4A515B;border-radius:999px;overflow:hidden}
+.lang button{background:none;border:0;color:#C5CCD4;font:600 13px var(--b);padding:7px 11px;cursor:pointer}
+.lang button[aria-pressed=true]{background:#fff;color:var(--slate)}
+.hero{background:var(--slate);color:#fff;padding:56px 0 0;overflow:hidden}
+.hero h1{font-family:var(--h);font-weight:800;font-size:clamp(42px,7.4vw,96px);line-height:.95;letter-spacing:-.02em;max-width:13ch}
+.hero .lead{font-size:clamp(17px,2vw,20px);color:#C9D0D7;max-width:46ch;margin-top:22px}
+.paths{display:grid;gap:14px;margin-top:36px}
+.path{display:block;text-decoration:none;border-radius:18px;padding:22px 24px;position:relative}
+.path b{display:block;font-family:var(--h);font-size:24px;font-weight:700;line-height:1.1}
+.path span{display:block;font-size:15px;margin-top:6px;opacity:.85}
+.path i{position:absolute;right:22px;top:22px;font-style:normal;font:700 12px var(--m);padding:5px 9px;border-radius:999px}
+.agents{background:var(--sun);color:#2b2100}.agents i{background:#2b2100;color:var(--sun)}
+.vendors{background:var(--slate2);border:1px solid #3B424C}.vendors i{background:var(--sea);color:#fff}
+.board{margin-top:56px;background:#111418;border-radius:22px 22px 0 0;padding:26px 0 8px}
+.board-head{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:0 26px 16px;border-bottom:1px solid #2C323A;flex-wrap:wrap}
+.board-head h2{font-family:var(--h);font-size:22px;font-weight:700}
+.tabs{display:flex;gap:6px}.tabs button{background:#1E2329;border:1px solid #2F363F;color:#C5CCD4;font:600 13px var(--b);padding:8px 14px;border-radius:999px;cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--sun);color:#2b2100;border-color:var(--sun)}
+table{width:100%;border-collapse:collapse;font-family:var(--m);font-size:14px}
+th{text-align:left;color:#7D8792;font-weight:500;font-size:11.5px;letter-spacing:.06em;padding:12px 26px}
+td{padding:14px 26px;border-top:1px solid #23292F;color:#E9EDF1}
+td.city{font-weight:700;color:#fff}td.reg{color:#8FA0AF}
+.st{display:inline-block;font-size:11.5px;padding:4px 9px;border-radius:6px;background:#173B3F;color:#7FE0E6}
+.st.few{background:#3F3417;color:var(--sun)}
+.hide-sm{display:none}
+section{padding:88px 0}
+h2.big{font-family:var(--h);font-weight:800;font-size:clamp(32px,5vw,56px);line-height:1;letter-spacing:-.015em;max-width:17ch}
+.sub{color:var(--mist);font-size:18px;max-width:52ch;margin-top:14px}
+.timeline{display:grid;gap:0;margin-top:44px;border-top:2px solid var(--ink)}
+.slot{display:grid;grid-template-columns:120px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
+.slot time{font:700 15px var(--m);color:var(--sea)}.slot b{font-size:20px;display:block}.slot p{color:var(--mist);margin-top:4px}
+.why{background:var(--stone)}
+.quote{font-family:var(--h);font-weight:700;font-size:clamp(26px,3.6vw,40px);line-height:1.15;max-width:24ch;margin-top:30px}
+.pts{display:grid;gap:22px;margin-top:40px}.pts div{border-top:2px solid var(--ink);padding-top:16px}.pts b{font-size:19px;display:block}.pts p{color:var(--mist);margin-top:6px}
+.price{display:grid;gap:16px;margin-top:40px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px}
+.card.feat{background:var(--slate);color:#fff;border-color:var(--slate)}
+.card h3{font-family:var(--h);font-size:22px}.card .amt{font-family:var(--h);font-weight:800;font-size:48px;line-height:1;margin-top:14px}.card .amt small{font:500 15px var(--b);opacity:.7}
+.card ul{list-style:none;margin-top:18px}.card li{padding:8px 0;border-top:1px solid rgba(127,127,127,.25);font-size:15px}
+.disc{margin-top:18px;font-size:15px;color:var(--mist)}
+.btn{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:15px 22px;border-radius:12px;font-weight:700;text-decoration:none;background:var(--sea);color:#fff}
+.btn.y{background:var(--sun);color:#2b2100}
+.logos{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px}.logos span{font-weight:600;font-size:14px;padding:10px 16px;border:1px solid var(--line);border-radius:999px;background:#fff}
+footer{background:var(--slate);color:#C5CCD4;padding:56px 0;font-size:15px}
+footer .wrap{display:grid;gap:26px}footer b{color:#fff;display:block;margin-bottom:6px}
+@media(min-width:760px){.paths{grid-template-columns:1fr 1fr}.pts{grid-template-columns:repeat(3,1fr)}.price{grid-template-columns:1fr 1fr}.hide-sm{display:table-cell}footer .wrap{grid-template-columns:2fr 1fr 1fr}}
+@media(min-width:1000px){nav{display:flex}.hero{padding-top:84px}.why .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:70px;align-items:start}.pts{grid-template-columns:1fr;margin-top:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="note">Homepage concept prepared for Granite Travel Trade Expos by Onur D. · Atlas Studio — real event data from your current site, new design.</div>
+<header><div class="wrap">
+  <a class="logo" href="#">GRANITE<small>Travel Trade Expos</small></a>
+  <nav aria-label="Main"><a href="#route" data-t="n1">2027 Expos</a><a href="#format" data-t="n2">Format</a><a href="#exhibit" data-t="n3">Exhibit</a><a href="#contact" data-t="n4">Contact</a></nav>
+  <div class="lang" role="group" aria-label="Language"><button aria-pressed="true" data-l="en">EN</button><button aria-pressed="false" data-l="fr">FR</button><button aria-pressed="false" data-l="es">ES</button></div>
+</div></header>
+
+<section class="hero" style="padding-bottom:0"><div class="wrap">
+  <h1 data-t="h1">Networking, elevated. 14 cities. One evening each.</h1>
+  <p class="lead" data-t="lead">Canada's boutique travel trade expos bring destinations, hotels, cruise lines and tour operators face to face with local travel advisors, in the markets the big shows skip.</p>
+  <div class="paths">
+    <a class="path agents" href="#route"><i data-t="free">FREE</i><b data-t="a1">I'm a travel advisor</b><span data-t="a2">Register for an expo near you. Dinner, prizes and $20 gift cards for the first 50 agents.</span></a>
+    <a class="path vendors" href="#exhibit"><i>FROM CAD $1,116</i><b data-t="v1">I'm a supplier</b><span data-t="v2">Book a table and meet the agents who sell your product. Save up to 20% on multiple shows.</span></a>
+  </div>
+
+  <div class="board" id="route">
+    <div class="board-head"><h2 data-t="route">2027 Expo route</h2>
+      <div class="tabs" role="group" aria-label="Season"><button aria-pressed="true" data-s="spring">Spring</button><button aria-pressed="false" data-s="fall">Fall</button></div></div>
+    <table><thead><tr><th>DATE</th><th>CITY</th><th class="hide-sm">REGION</th><th>AGENTS</th></tr></thead><tbody id="rows"></tbody></table>
+  </div>
+</div></section>
+
+<section id="format"><div class="wrap">
+  <h2 class="big" data-t="f1">Four hours that replace a week of sales calls.</h2>
+  <p class="sub" data-t="f2">Every expo follows the same focused evening, so agents can come straight from work and suppliers get real conversations.</p>
+  <div class="timeline">
+    <div class="slot"><time>4:00 PM</time><div><b data-t="s1">Supplier presentations</b><p data-t="s1p">Short, product-focused sessions for a seated room of advisors.</p></div></div>
+    <div class="slot"><time>6:00 PM</time><div><b data-t="s2">Trade show</b><p data-t="s2p">Draped tables, printed signage and one-to-one conversations.</p></div></div>
+    <div class="slot"><time>7:30 PM</time><div><b data-t="s3">Dinner &amp; prize giveaways</b><p data-t="s3p">A relaxed close where relationships are built.</p></div></div>
+  </div>
+</div></section>
+
+<section class="why"><div class="wrap">
+  <div><h2 class="big" data-t="w1">Boutique by design. Powerful by impact.</h2>
+  <p class="quote" data-t="w2">“We are not the largest travel trade show in the country, and that's intentional.”</p></div>
+  <div class="pts">
+    <div><b data-t="p1">Secondary markets first</b><p data-t="p1p">London, Red Deer, Moncton, Kelowna: agents who rarely meet suppliers in person.</p></div>
+    <div><b data-t="p2">Limited exhibitors</b><p data-t="p2p">A capped number of tables means every supplier gets attention.</p></div>
+    <div><b data-t="p3">Proven partners</b><p data-t="p3p">Around 80 brands exhibited in 2026, from Tourism Australia to Sandals.</p></div>
+  </div>
+</div></section>
+
+<section id="exhibit"><div class="wrap">
+  <h2 class="big" data-t="e1">Exhibit with us.</h2>
+  <p class="sub" data-t="e2">Presentation slots are sold out for 2027. Exhibit tables and sponsorships are still available.</p>
+  <div class="price">
+    <div class="card"><h3 data-t="c1">Exhibit only</h3><div class="amt">$1,395 <small>CAD / expo</small></div>
+      <ul><li data-t="c1a">6' or 8' draped table</li><li data-t="c1b">Printed signage</li><li data-t="c1c">Full evening access to agents</li></ul>
+      <a class="btn" href="#contact" data-t="book">Book a table</a></div>
+    <div class="card feat"><h3 data-t="c2">Presentation + exhibit</h3><div class="amt">$1,795 <small>CAD / expo</small></div>
+      <ul><li data-t="c2a">Everything in Exhibit</li><li data-t="c2b">Presentation slot to a seated room</li><li data-t="c2c">Sold out for 2027 — join the waitlist</li></ul>
+      <a class="btn y" href="#contact" data-t="wait">Join the waitlist</a></div>
+  </div>
+  <p class="disc" data-t="disc">Multi-show discounts: 4–8 expos 10% · 9–11 expos 15% · 12–14 expos 20%. 50% deposit to reserve.</p>
+  <div class="logos"><span>Bahia Principe</span><span>Princess Hotels &amp; Resorts</span><span>Tourism Australia</span><span>Sandals</span><span>Celebrity Cruises</span><span>Collette</span><span>WestJet Vacations</span><span>+ 70 more</span></div>
+</div></section>
+
+<footer id="contact"><div class="wrap">
+  <div><b>Granite Travel Trade Expos</b>Granite Productions Inc.<br>140 Yonge Street, Suite 200, Toronto, ON<br>710 Dorval Drive, Suite 200, Oakville, ON</div>
+  <div><b data-t="ct">Contact</b>Bradley Dean, Partner<br>+1-416-565-5212</div>
+  <div><b data-t="ex">Explore</b>In the News<br>Photo Gallery<br>Testimonials</div>
+</div></footer>
+
+<script>
+const R={spring:[['APR 05','London','Ontario',0],['APR 06','Kitchener-Waterloo','Ontario',0],['APR 07','Barrie','Ontario',0],['APR 08','Oshawa','Ontario',1],['MAY 31',"St. John's",'Newfoundland',0],['JUN 02','Halifax','Nova Scotia',0],['JUN 03','Moncton','New Brunswick',1]],
+fall:[['OCT 05','Winnipeg','Manitoba',0],['OCT 06','Red Deer','Alberta',0],['OCT 07','Kelowna','British Columbia',0],['NOV 01','Ottawa','Ontario',0],['NOV 02','Kingston','Ontario',1],['NOV 03','Markham','Ontario',0],['NOV 04','Hamilton','Ontario',0]]};
+const ST={en:'Register',fr:"S'inscrire",es:'Registrarse'};
+let lang='en',season='spring';
+function rows(){document.getElementById('rows').innerHTML=R[season].map(r=>`<tr><td>${r[0]}</td><td class="city">${r[1]}</td><td class="reg hide-sm">${r[2]}</td><td><a class="st" href="#">${ST[lang]}</a></td></tr>`).join('')}
+const T={fr:{n1:'Expos 2027',n2:'Format',n3:'Exposer',n4:'Contact',h1:'Le réseautage, autrement. 14 villes. Une soirée chacune.',lead:"Les salons boutique du voyage au Canada réunissent destinations, hôtels, croisiéristes et voyagistes avec les conseillers en voyages locaux, dans les marchés que les grands salons oublient.",free:'GRATUIT',a1:'Je suis conseiller en voyages',a2:"Inscrivez-vous à une expo près de chez vous. Souper, prix et cartes-cadeaux de 20 $ pour les 50 premiers agents.",v1:'Je suis fournisseur',v2:"Réservez une table et rencontrez les agents qui vendent votre produit. Jusqu'à 20 % de rabais sur plusieurs salons.",route:'Itinéraire 2027',f1:"Quatre heures qui valent une semaine d'appels.",f2:'Chaque expo suit la même soirée ciblée.',s1:'Présentations des fournisseurs',s2:'Salon commercial',s3:'Souper et tirages',w1:'Boutique par choix. Puissant par impact.',e1:'Exposez avec nous.',book:'Réserver une table',wait:"Liste d'attente",ct:'Contact',ex:'Découvrir'},
+es:{n1:'Expos 2027',n2:'Formato',n3:'Expositores',n4:'Contacto',h1:'Networking de otro nivel. 14 ciudades. Una tarde en cada una.',lead:'Las ferias boutique de turismo de Canadá reúnen destinos, hoteles, navieras y turoperadores con agentes de viajes locales, en los mercados que las grandes ferias no visitan.',free:'GRATIS',a1:'Soy agente de viajes',a2:'Regístrate en una expo cerca de ti. Cena, premios y tarjetas de $20 para los primeros 50 agentes.',v1:'Soy proveedor',v2:'Reserva una mesa y conoce a los agentes que venden tu producto. Hasta 20% de descuento en varias ferias.',route:'Ruta 2027',f1:'Cuatro horas que valen una semana de llamadas.',f2:'Cada expo sigue la misma tarde enfocada.',s1:'Presentaciones de proveedores',s2:'Feria comercial',s3:'Cena y sorteos',w1:'Boutique por diseño. Potente por impacto.',e1:'Expón con nosotros.',book:'Reservar mesa',wait:'Lista de espera',ct:'Contacto',ex:'Explorar'}};
+const EN={};document.querySelectorAll('[data-t]').forEach(e=>EN[e.dataset.t]=e.innerHTML);
+function setLang(l){lang=l;document.documentElement.lang=l;document.querySelectorAll('[data-t]').forEach(e=>{const k=e.dataset.t;e.innerHTML=(l!=='en'&&T[l][k])||EN[k]});document.querySelectorAll('[data-l]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===l));rows()}
+document.querySelectorAll('[data-l]').forEach(b=>b.onclick=()=>setLang(b.dataset.l));
+document.querySelectorAll('[data-s]').forEach(b=>b.onclick=()=>{season=b.dataset.s;document.querySelectorAll('[data-s]').forEach(x=>x.setAttribute('aria-pressed',x===b));rows()});
+rows();
+</script>
+</body></html>
