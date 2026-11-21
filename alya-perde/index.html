@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALYA Perde | Kepez Antalya Perde, Tül, Stor ve Zebra Perde</title>
+<meta name="description" content="ALYA Perde – Kepez, Antalya'da tül perde, fon perde, stor, zebra perde ve jaluzi. Yerinde ölçü, dikim ve montaj. Hemen arayın: 0535 360 33 86">
+<meta name="keywords" content="antalya perde, kepez perdeci, tül perde antalya, zebra perde antalya, stor perde kepez, perde montaj antalya">
+<meta property="og:title" content="ALYA Perde | Kepez Antalya">
+<meta property="og:description" content="Evinize yakışan perdeler. Yerinde ölçü ve montaj.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HomeGoodsStore","name":"ALYA Perde","telephone":"+905353603386",
+"address":{"@type":"PostalAddress","streetAddress":"Tevfik Fikret Cd. No:6A","addressLocality":"Kepez","addressRegion":"Antalya","postalCode":"07025","addressCountry":"TR"},
+"geo":{"@type":"GeoCoordinates","latitude":36.91355,"longitude":30.67804},"areaServed":"Antalya"}
+</script>
+<style>
+:root{--ink:#2b2320;--wine:#7a2e3a;--wine2:#5c1f2a;--gold:#c9a36a;--cream:#f7f1e8;--sand:#ece2d3}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,sans-serif;color:var(--ink);background:var(--cream);overflow-x:hidden}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600}
+a{color:inherit;text-decoration:none}
+
+/* ---------- Açılış perdesi ---------- */
+.stage{position:fixed;inset:0;z-index:100;pointer-events:none}
+.stage .panel{position:absolute;top:0;bottom:0;width:50.5%;
+ background:repeating-linear-gradient(90deg,#5c1f2a 0,#8a3443 28px,#6b2431 46px,#4a1822 70px);
+ box-shadow:inset 0 -60px 80px rgba(0,0,0,.35);transition:transform 1.8s cubic-bezier(.7,0,.2,1)}
+.stage .l{left:0;transform-origin:left}.stage .r{right:0;transform-origin:right}
+.stage .valance{position:absolute;top:0;left:0;right:0;height:70px;background:linear-gradient(#4a1822,#6b2431);
+ border-bottom:4px solid var(--gold);transition:transform 1.2s 1.4s}
+.stage .logo{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;color:var(--gold);
+ font-family:'Cormorant Garamond',serif;font-size:clamp(42px,9vw,96px);letter-spacing:.12em;transition:opacity .6s}
+.stage .logo small{display:block;font-family:Inter;font-size:14px;letter-spacing:.5em;color:#f3dcc0}
+.stage.open .l{transform:translateX(-100%) scaleX(.6)}
+.stage.open .r{transform:translateX(100%) scaleX(.6)}
+.stage.open .logo{opacity:0}
+.stage.open .valance{transform:translateY(-100%)}
+
+/* ---------- Üst menü ---------- */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;
+ padding:16px 5vw;background:rgba(247,241,232,.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,.05)}
+.brand{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;letter-spacing:.1em;color:var(--wine)}
+.brand span{color:var(--gold)}
+nav .links a{margin-left:26px;font-size:14px;font-weight:500}
+nav .call{background:var(--wine);color:#fff;padding:10px 18px;border-radius:30px}
+@media(max-width:760px){nav .links a:not(.call){display:none}}
+
+/* ---------- Hero: sallanan tül ---------- */
+.hero{position:relative;min-height:100vh;display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:40px;padding:120px 5vw 60px}
+.hero h1{font-size:clamp(44px,6vw,82px);line-height:1;color:var(--wine2)}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p{margin:22px 0 32px;font-size:18px;line-height:1.6;max-width:520px;color:#5a4d47}
+.btn{display:inline-block;padding:15px 28px;border-radius:40px;font-weight:600;margin:0 10px 10px 0;transition:.3s}
+.btn.wa{background:#25d366;color:#fff}.btn.wa:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(37,211,102,.4)}
+.btn.o{border:2px solid var(--wine);color:var(--wine)}.btn.o:hover{background:var(--wine);color:#fff}
+.window{position:relative;height:560px;border-radius:200px 200px 16px 16px;overflow:hidden;
+ background:linear-gradient(180deg,#9fd1f0 0%,#cfe9f7 55%,#f6e1b8 100%);box-shadow:0 30px 70px rgba(92,31,42,.25);border:10px solid #fff}
+.window .sun{position:absolute;width:140px;height:140px;border-radius:50%;background:radial-gradient(#fff6d5,#ffd37a 60%,transparent 70%);
+ top:70px;left:50%;transform:translateX(-50%);animation:glow 5s ease-in-out infinite}
+.window .sea{position:absolute;bottom:0;left:0;right:0;height:35%;background:linear-gradient(#5aa9d6,#2f7fb0)}
+.window .sea:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 30px,rgba(255,255,255,.25) 30px 46px);
+ animation:waves 6s linear infinite;opacity:.5}
+.rod{position:absolute;top:18px;left:-10px;right:-10px;height:8px;background:linear-gradient(var(--gold),#9b7a45);border-radius:4px;z-index:5}
+.sheer{position:absolute;top:22px;bottom:0;width:46%;z-index:4;transform-origin:top;
+ background:repeating-linear-gradient(90deg,rgba(255,255,255,.75) 0 14px,rgba(255,255,255,.35) 14px 30px,rgba(255,255,255,.7) 30px 40px)}
+.sheer.l{left:0;animation:sway 6s ease-in-out infinite;clip-path:polygon(0 0,100% 0,78% 100%,0 100%)}
+.sheer.r{right:0;animation:sway 6s ease-in-out infinite reverse;clip-path:polygon(0 0,100% 0,100% 100%,22% 100%)}
+.drape{position:absolute;top:22px;bottom:0;width:16%;z-index:6;
+ background:repeating-linear-gradient(90deg,#6b2431 0,#8a3443 12px,#5c1f2a 22px)}
+.drape.l{left:0}.drape.r{right:0}
+@keyframes sway{0%,100%{transform:skewX(0) scaleX(1)}50%{transform:skewX(3deg) scaleX(1.03)}}
+@keyframes glow{50%{box-shadow:0 0 80px 30px rgba(255,220,140,.6)}}
+@keyframes waves{to{background-position:200px 0}}
+@media(max-width:860px){.hero{grid-template-columns:1fr}.window{height:420px}}
+
+/* ---------- Bölümler ---------- */
+section{padding:90px 5vw}
+.title{text-align:center;margin-bottom:50px}
+.title small{color:var(--gold);letter-spacing:.3em;font-size:12px;font-weight:600}
+.title h2{font-size:clamp(34px,4.5vw,54px);color:var(--wine2);margin-top:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.06);transition:.4s}
+.card:hover{transform:translateY(-8px);box-shadow:0 20px 45px rgba(92,31,42,.18)}
+.card .demo{height:190px;position:relative;overflow:hidden;background:linear-gradient(#cfe9f7,#f6e1b8)}
+.card .txt{padding:22px}
+.card h3{font-size:26px;color:var(--wine)}
+.card p{font-size:14px;line-height:1.6;color:#6b5e58;margin-top:6px}
+/* mini animasyonlar */
+.d-tul:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.85) 0 10px,rgba(255,255,255,.35) 10px 22px);animation:sway 4s ease-in-out infinite;transform-origin:top}
+.d-fon:before,.d-fon:after{content:"";position:absolute;top:0;bottom:0;width:50%;background:repeating-linear-gradient(90deg,#3e4a5c 0,#58677d 10px,#323c4b 20px);transition:1s}
+.d-fon:before{left:0}.d-fon:after{right:0}
+.card:hover .d-fon:before{transform:translateX(-70%)}.card:hover .d-fon:after{transform:translateX(70%)}
+.d-stor:before{content:"";position:absolute;top:0;left:12%;right:12%;background:#e9dcc6;border-bottom:8px solid #c9b48f;animation:roll 4s ease-in-out infinite}
+@keyframes roll{0%,100%{height:85%}50%{height:20%}}
+.d-zebra:before{content:"";position:absolute;inset:0 12%;background:repeating-linear-gradient(180deg,#f5efe5 0 18px,rgba(245,239,229,.35) 18px 36px);animation:zebra 3s linear infinite}
+@keyframes zebra{to{background-position:0 36px}}
+.d-jal:before{content:"";position:absolute;inset:0 12%;background:repeating-linear-gradient(180deg,#d9d9d9 0 12px,transparent 12px 16px);animation:tilt 3s ease-in-out infinite}
+@keyframes tilt{50%{background:repeating-linear-gradient(180deg,#d9d9d9 0 4px,transparent 4px 16px)}}
+.d-olcu{background:linear-gradient(135deg,var(--wine2),var(--wine))!important;display:grid;place-items:center;color:var(--gold);font-size:70px}
+.d-olcu span{animation:bob 2.5s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px) rotate(-8deg)}}
+
+/* neden biz */
+.why{background:var(--wine2);color:#f3e6d8}
+.why .title h2{color:#fff}
+.why .item{text-align:center;padding:20px}
+.why .item b{display:block;font-family:'Cormorant Garamond';font-size:46px;color:var(--gold)}
+/* kartela */
+.swatches{display:flex;justify-content:center;flex-wrap:wrap;gap:14px}
+.sw{width:84px;height:150px;border-radius:8px;transform-origin:top;animation:sway 5s ease-in-out infinite;box-shadow:0 10px 20px rgba(0,0,0,.12)}
+.sw:nth-child(2n){animation-delay:-1.5s}.sw:nth-child(3n){animation-delay:-3s}
+/* reveal */
+.reveal{opacity:0;transform:translateY(40px);transition:1s}
+.reveal.in{opacity:1;transform:none}
+/* iletişim */
+.contact{display:grid;grid-template-columns:1fr 1.3fr;gap:30px;align-items:stretch}
+.contact .box{background:#fff;border-radius:18px;padding:34px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.contact .box p{margin:14px 0;line-height:1.6}
+.contact iframe{width:100%;height:100%;min-height:340px;border:0;border-radius:18px}
+@media(max-width:860px){.contact{grid-template-columns:1fr}}
+footer{text-align:center;padding:30px;font-size:13px;color:#8a7d76}
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;width:62px;height:62px;border-radius:50%;background:#25d366;display:grid;place-items:center;
+ box-shadow:0 8px 25px rgba(37,211,102,.5);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="stage" id="stage">
+  <div class="panel l"></div><div class="panel r"></div><div class="valance"></div>
+  <div class="logo">ALYA<small>PERDE</small></div>
+</div>
+
+<nav>
+  <a href="#" class="brand">ALYA <span>PERDE</span></a>
+  <div class="links">
+    <a href="#urunler">Ürünler</a><a href="#neden">Neden Biz</a><a href="#iletisim">İletişim</a>
+    <a href="tel:+905353603386" class="call">📞 Hemen Ara</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div>
+    <h1>Evinize <em>yakışan</em> perdeler</h1>
+    <p>Tül, fon, stor, zebra perde ve jaluzi. Kepez'de yeni açılan mağazamızda yüzlerce kumaş seçeneği; yerinde ölçü, özenli dikim ve temiz montaj.</p>
+    <a class="btn wa" href="https://wa.me/905353603386?text=Merhaba%2C%20perde%20i%C3%A7in%20fiyat%20almak%20istiyorum" target="_blank">WhatsApp'tan Fiyat Al</a>
+    <a class="btn o" href="tel:+905353603386">0535 360 33 86</a>
+  </div>
+  <div class="window">
+    <div class="sun"></div><div class="sea"></div>
+    <div class="rod"></div>
+    <div class="sheer l"></div><div class="sheer r"></div>
+    <div class="drape l"></div><div class="drape r"></div>
+  </div>
+</header>
+
+<section id="urunler">
+  <div class="title reveal"><small>ÜRÜNLERİMİZ</small><h2>Her pencereye bir çözüm</h2></div>
+  <div class="grid">
+    <div class="card reveal"><div class="demo d-tul"></div><div class="txt"><h3>Tül Perde</h3><p>Işığı yumuşatan, odayı ferah gösteren zarif tüller.</p></div></div>
+    <div class="card reveal"><div class="demo d-fon"></div><div class="txt"><h3>Fon Perde</h3><p>Kadife, keten ve blackout kumaşlarla şık ve karartmalı.</p></div></div>
+    <div class="card reveal"><div class="demo d-stor"></div><div class="txt"><h3>Stor Perde</h3><p>Mutfak, ofis ve çocuk odası için pratik, kolay temizlenir.</p></div></div>
+    <div class="card reveal"><div class="demo d-zebra"></div><div class="txt"><h3>Zebra Perde</h3><p>Işığı tek hareketle ayarlayın. Modern evlerin favorisi.</p></div></div>
+    <div class="card reveal"><div class="demo d-jal"></div><div class="txt"><h3>Jaluzi</h3><p>Alüminyum ve ahşap jaluzi; iş yeri ve balkonlar için.</p></div></div>
+    <div class="card reveal"><div class="demo d-olcu"><span>📏</span></div><div class="txt"><h3>Ölçü & Montaj</h3><p>Evinize geliyor, ölçüyü alıyor, perdenizi takıyoruz.</p></div></div>
+  </div>
+</section>
+
+<section class="why" id="neden">
+  <div class="title reveal"><small>NEDEN ALYA</small><h2>Mahallenizin perdecisi</h2></div>
+  <div class="grid">
+    <div class="item reveal"><b>01</b>Yerinde ölçü — hatasız oturan perde</div>
+    <div class="item reveal"><b>02</b>Kendi atölyemizde özenli dikim</div>
+    <div class="item reveal"><b>03</b>Uygun fiyat, net teklif</div>
+    <div class="item reveal"><b>04</b>Hızlı teslim ve temiz montaj</div>
+  </div>
+</section>
+
+<section>
+  <div class="title reveal"><small>KUMAŞ KARTELASI</small><h2>Renginizi seçin</h2></div>
+  <div class="swatches reveal">
+    <div class="sw" style="background:#efe6d6"></div><div class="sw" style="background:#c9b48f"></div>
+    <div class="sw" style="background:#8a3443"></div><div class="sw" style="background:#3e4a5c"></div>
+    <div class="sw" style="background:#7d8c6a"></div><div class="sw" style="background:#d8a48f"></div>
+    <div class="sw" style="background:#5a4d47"></div><div class="sw" style="background:#b9c7d3"></div>
+  </div>
+</section>
+
+<section id="iletisim">
+  <div class="title reveal"><small>İLETİŞİM</small><h2>Mağazamıza bekleriz</h2></div>
+  <div class="contact reveal">
+    <div class="box">
+      <h3 style="font-size:32px;color:var(--wine)">ALYA Perde</h3>
+      <p>📍 Tevfik Fikret Cd. No:6A<br>07025 Kepez / Antalya</p>
+      <p>📞 <a href="tel:+905353603386"><b>0535 360 33 86</b></a></p>
+      <a class="btn wa" href="https://wa.me/905353603386" target="_blank">WhatsApp</a>
+      <a class="btn o" href="https://www.google.com/maps/dir/?api=1&destination=36.91355,30.67804" target="_blank">Yol Tarifi</a>
+    </div>
+    <iframe src="https://maps.google.com/maps?q=36.91355,30.67804&z=16&output=embed" loading="lazy" title="ALYA Perde konum"></iframe>
+  </div>
+</section>
+
+<footer>© 2026 ALYA Perde · Kepez, Antalya · Site: Atlas Studio</footer>
+
+<a class="fab" href="https://wa.me/905353603386" target="_blank" aria-label="WhatsApp">
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+</a>
+
+<script>
+addEventListener('load',()=>setTimeout(()=>{const s=document.getElementById('stage');s.classList.add('open');setTimeout(()=>s.remove(),2800)},700));
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
